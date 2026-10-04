@@ -17,7 +17,7 @@ pipeline {
 					sh "service httpd start "
 				}
 			}
-			stage('deploy html's'){
+			stage('deploy htmls'){
 				steps{
 					sh "cp -r index.html /var/www/html"
 					sh "cp -r dev.html /var/www/html"
